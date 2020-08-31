@@ -1,0 +1,18 @@
+2020-08-29 15:22:08,857 INFO 5224 [egg-schedule]: register schedule D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-08-29 15:22:08,857 INFO 5224 [egg-schedule]: register schedule D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-08-29 15:22:08,857 INFO 5224 [egg-schedule]: register schedule D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-08-29 15:22:09,230 INFO 14232 [Timer] D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 47270774ms at 2020-08-30 04:30:00.004
+2020-08-29 15:22:09,231 INFO 14232 [Timer] D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 31070770ms at 2020-08-30 00:00:00.001
+2020-08-29 15:22:09,231 INFO 14232 [Timer] D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 31071769ms at 2020-08-30 00:00:01.000
+2020-08-29 15:46:36,755 INFO 3640 [egg-schedule]: register schedule D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-08-29 15:46:36,755 INFO 3640 [egg-schedule]: register schedule D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-08-29 15:46:36,755 INFO 3640 [egg-schedule]: register schedule D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-08-29 15:46:37,097 INFO 9028 [Timer] D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 45802907ms at 2020-08-30 04:30:00.004
+2020-08-29 15:46:37,098 INFO 9028 [Timer] D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 29602903ms at 2020-08-30 00:00:00.001
+2020-08-29 15:46:37,098 INFO 9028 [Timer] D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 29603902ms at 2020-08-30 00:00:01.000
+2020-08-31 06:43:40,860 INFO 10948 [egg-schedule]: register schedule D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-08-31 06:43:40,860 INFO 10948 [egg-schedule]: register schedule D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-08-31 06:43:40,860 INFO 10948 [egg-schedule]: register schedule D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-08-31 06:43:50,408 INFO 56568 [Timer] D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 78369594ms at 2020-09-01 04:30:00.002
+2020-08-31 06:43:50,409 INFO 56568 [Timer] D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 62169592ms at 2020-09-01 00:00:00.001
+2020-08-31 06:43:50,410 INFO 56568 [Timer] D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 62170591ms at 2020-09-01 00:00:01.001

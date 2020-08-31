@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+</head>
+<style>
+    .registerList {
+        width: 600px;
+        height: 500px;
+        text-align: center;
+        border: 2px solid rgba(220, 220, 220, 1);
+        border-radius: 3px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: gray;
+    }
+
+    .box {
+        margin: auto;
+        margin-top: 50px;
+        width: 400px;
+        border: 2px solid rgba(220, 220, 220, 0.3);
+        /* background-color: red; */
+        line-height: 50px;
+    }
+
+    h1 {
+        color: gray;
+        margin-top: 40px;
+    }
+
+    button {
+        width: 100px;
+        height: 30px;
+    }
+</style>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+    window.onload = function () {
+
+        let sure = document.querySelector(".sure");
+        sure.onclick = function () {
+            let name = document.querySelector(".name").value;
+            let password = document.querySelector(".password").value;
+            let twicePwd = document.querySelector(".twicePwd").value;
+            let select = document.querySelector(".choose").value;
+            let show = document.querySelector(".show");
+            // console.log(name, password, twicePwd, select);
+            if (twicePwd == "" && password == "" && name == "") {
+                show.innerHTML = "内容不能为空";
+            } else if (password == "") {
+                show.innerHTML = "密码不能为空";
+            } else if (twicePwd == "") {
+                show.innerHTML = "再次输入密码不能为空";
+            } else if (twicePwd != password) {
+                show.innerHTML = "两次密码输入不同";
+            } else {
+                if (name.length > 10) {
+                    show.innerHTML = "昵称不能超过10位";
+                } else if (password.length > 16) {
+                    show.innerHTML = "密码不能超过16位";
+                } else {
+                    axios.post(`/${select}Regist.do`, {
+                        name: name,
+                        password: password,
+                    }).then(re => {
+                        console.log(re.data);
+                        if (re.data.length == 1 ) {
+                            if(re.data[0].accountNumber){
+                                show.innerHTML = `注册成功，请记住您的账号：${re.data[0].accountNumber}`;
+                                document.cookie=`number= ${re.data[0].accountNumber}`;
+                                document.cookie=`name=${name}`
+                                console.log(document.cookie);
+                                setTimeout(()=>{
+                                    location.href=`${select}.html`;
+                                },1000)
+
+                            }else if(re.data[0].name){
+                                show.innerHTML = `注册不成功，昵称已存在`;
+                            }
+                        } else if (re.data == "err") {
+                                show.innerHTML = "用户名或者密码不能为空";
+                            }
+                    }).catch(err => {
+                        console.log("ajax访问失败");
+                    });
+                }
+
+            }
+
+
+
+
+        }
+    }
+</script>
+
+<body>
+    <div class="registerList">
+        <h1>注册</h1>
+        <div class="box">
+            请输入昵称：<input type="text" class="name" placeholder="长度不大于10"><br>
+            请输入密码：<input type="password" class="password" placeholder="长度不大于16"><br>
+            请确定密码：<input type="password" class="twicePwd"><br>
+            请选择身份：
+            <select class="choose" style="width: 163px;height: 22px;">
+                <option value="user">用户</option>
+                <option value="admin">管理员</option>
+            </select>
+            <br>
+            <button class="sure">确定注册</button>
+            <div class="show"></div>
+        </div>
+    </div>
+</body>
+
+</html>

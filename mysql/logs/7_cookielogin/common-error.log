@@ -1,0 +1,8 @@
+2020-08-31 08:41:48,269 ERROR 56568 nodejs.ClusterClientNoResponseError: client no response in 176723ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\HQ\第5阶段-Vue\实操项目\mysql\node_modules\_cluster-client@3.0.1@cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 56568
+hostname: LAPTOP-E6M5ELCA
+
